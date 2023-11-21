@@ -1,0 +1,74 @@
+body {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#adDiv {
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#basla {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#dogru {
+  color: #27ae60;
+}
+
+#yanlis {
+  color: #e74c3c;
+}
+
+#sonuclar {
+  margin-top: 20px;
+}
+
+/* Konfeti animasyonu için gerekli stiller */
+@keyframes konfeti {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.konfeti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: konfeti 5s ease-out;
+}
+
+.konfeti-renk-1 {
+  background-color: #e74c3c;
+}
+
+.konfeti-renk-2 {
+  background-color: #3498db;
+}
+
+.konfeti-renk-3 {
+  background-color: #2ecc71;
+}
+
+.konfeti-renk-4 {
+  background-color: #f39c12;
+}

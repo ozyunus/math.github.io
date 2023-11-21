@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matematiksel İşlemler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="adDiv">
+    <label for="ad">Adınız: </label>
+    <input type="text" id="ad" placeholder="Adınızı Girin">
+  </div>
+
+  <button id="basla" onclick="basla()">Başla</button>
+
+  <div id="secenekler" style="display: none;">
+    <button onclick="soruSor('+')">Toplama</button>
+    <button onclick="soruSor('-')">Çıkarma</button>
+    <button onclick="soruSor('*')">Çarpma</button>
+    <button onclick="soruSor('/')">Bölme</button>
+  </div>
+
+  <p id="sonuc"></p>
+
+  <div id="sonuclar"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
