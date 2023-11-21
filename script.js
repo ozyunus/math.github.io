@@ -2,6 +2,7 @@ var ad;
 var dogruSayac = 0;
 var yanlisSayac = 0;
 var konfetiGoruldu = false;
+var test=0;
 
 function getRandomNumber() {
   return Math.floor(Math.random() * 10) + 1; // 1 ile 10 arasında rastgele bir sayı üret
